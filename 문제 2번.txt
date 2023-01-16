@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+	int a;
+	int b;
+	int c;
+	const int MAX = 1000;
+
+	printf("정수 2개를 입력하세요. 모든 정수는 최대값 %d 보다 작은 값으로 입력하세요.\n", MAX);
+	printf("첫번째 정수 키보드 입력 : ");
+	scanf_s("%d", &a);
+	printf("두번째 정수 키보드 입력 : ");
+	scanf_s("%d", &b);
+	printf("**\n");
+
+	printf("최대값(%d) - 첫번째 정수(%d) = %d\n",MAX, a,MAX-a);
+	printf("첫번째 정수(%d) X 두번째 정수(%d) = %d",a,b,a*b);
+}
